@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pokemon App</title>
+    <style>
+        body {
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            background-color: rgb(92, 0, 89);
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        p {
+            font-size: 24px;
+        }
+
+        .label {
+            font-size: 24px;
+            color: #ffcb05;
+            display: block; 
+        }
+
+        .content {
+            font-size: 16px;
+            display: block;
+            margin-left: 0px; 
+        }
+    </style>
+</head>
+
+<body>
+    <input id="pokemonInput" placeholder="Enter Pokemon">
+    <button onclick="dataFetch()">Search</button>
+    <div class="container">
+    <div class="left">
+        <h1 id="name"></h1>
+        <img id = "img" width = 500 height= 500>
+    </div>
+
+    <div class="right">
+        <p id="height"></p>
+        <p id="Abilities"></p>
+        <p id="Indices"></p>
+    </div>
+</div>
+    <script src="pokemon.js"></script>
+
+</body>
+</html>
